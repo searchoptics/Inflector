@@ -16,6 +16,9 @@ echo Inflector::pluralize('information') . "\n"; // outputs information
 echo Inflector::singularize('information') . "\n"; // outputs information
 echo Inflector::pluralize('mouse') . "\n"; // outputs mice
 echo Inflector::singularize('mice') . "\n"; // outputs mouse
+echo Inflector::pluralize('status') . "\n"; // outputs statuses
+echo Inflector::singularize('statuses') . "\n"; // outputs status
+echo Inflector::singularize('status') . "\n"; // outputs status
 
 /* CamelCase to underscore / underscore to CamelCase */
 

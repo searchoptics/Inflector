@@ -59,7 +59,8 @@ class Inflector
       'man' => 'men',
       'child' => 'children',
       'sex' => 'sexes',
-      'move' => 'moves');
+      'move' => 'moves'
+    );
 
     $lowercased_word = strtolower($word);
 
@@ -99,12 +100,12 @@ class Inflector
       '/(matr)ices$/i' => '\1ix',
       '/(vert|ind)ices$/i' => '\1ex',
       '/^(ox)en/i' => '\1',
-      '/(alias|status)es$/i' => '\1',
+      '/(alias|status)(es)?$/i' => '\1',
       '/([octop|vir])i$/i' => '\1us',
       '/(cris|ax|test)es$/i' => '\1is',
       '/(shoe)s$/i' => '\1',
       '/(o)es$/i' => '\1',
-      '/(bus)es$/i' => '\1',
+      '/(bus)(es)?$/i' => '\1',
       '/([m|l])ice$/i' => '\1ouse',
       '/(x|ch|ss|sh)es$/i' => '\1',
       '/(m)ovies$/i' => '\1ovie',
