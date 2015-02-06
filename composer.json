@@ -1,0 +1,16 @@
+{
+    "name": "medio/inflector",
+    "description": "Port of Ruby on Rails Inflector by Akelos Framework maintained by Medio Interactive",
+    "license": "LGPL-2.1+",
+    "authors": [
+        { "name": "Bermi Ferrer Martinez" },
+        { "name": "Medio Interactive", "email": "podpora@medio.cz" }
+    ],
+    "autoload": {
+        "psr-4": { "Medio\\" : "src/" }
+    },
+    "require": {},
+    "require-dev": {
+        "nette/tester": "~1.3"
+    }
+}
