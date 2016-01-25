@@ -190,11 +190,13 @@ class Inflector
    * @static
    * @see variablize
    * @param    string    $word    Word to convert to camel case
+   * @param bool|false $uppercase_first   Set true to have the first character upper cased cased.
    * @return string UpperCamelCasedWord
    */
-  public static function camelize($word)
+  public static function camelize($word, $uppercase_first = false)
   {
-    return str_replace(' ','',ucwords(preg_replace('/[^A-Z^a-z^0-9]+/',' ',$word)));
+    $word   = str_replace(' ','',ucwords(preg_replace('/[^A-Z^a-z^0-9]+/',' ',$word)));
+    return $uppercase_first? ucfirst($word) : $word;
   }
 
   /**
