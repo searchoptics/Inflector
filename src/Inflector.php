@@ -214,7 +214,7 @@ class Inflector
    */
   public static function underscore($word)
   {
-    return  strtolower(preg_replace('/[^A-z^À-ÿ0-9]+/','_',
+    return  mb_strtolower(preg_replace('/[^A-z^À-ÿ^0-9]+/','_',
       preg_replace('/([a-zd])([A-Z])/','\1_\2',
       preg_replace('/([A-Z]+)([A-Z][a-z])/','\1_\2',$word))));
   }
